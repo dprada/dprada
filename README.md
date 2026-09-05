@@ -1,58 +1,77 @@
-
 # Diego Prada-Gracia, PhD
 
-**Theoretical Physicist & Computational Biologist**  
-*Statistical Mechanics • Complex Networks • Free Energy Landscapes • Computational Biophysics*
+**Theoretical Physicist · Computational Biologist · Scientific Software Architect**  
+*Molecular Simulation • Statistical Mechanics • Scientific Computing • AI for Molecular Science*
 
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0003--3375--870X-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0003-3375-870X)
+> Co-directing computational biophysics research and architecting production-grade scientific software: from non-equilibrium statistical mechanics to high-performance engines in Rust, Python, and TypeScript.
+
+[![UIBCDF](https://img.shields.io/badge/Lab-UIBCDF.org-2b5b84?logo=google-chrome&logoColor=white)](https://www.uibcdf.org)
 [![Google Scholar](https://img.shields.io/badge/Google-Scholar-4285F4?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=RDB1Sc0AAAAJ)
-[![Lab Website](https://img.shields.io/badge/Lab-UIBCDF.org-2b5b84?logo=google-chrome&logoColor=white)](https://www.uibcdf.org)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0003--3375--870X-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0003-3375-870X)
 [![GitHub Org](https://img.shields.io/badge/Organization-@uibcdf-181717?logo=github&logoColor=white)](https://github.com/uibcdf)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-diego--prada--gracia-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/diego-prada-gracia/)
 
 ---
 
-### 🔬 Research Leadership & Scientific Vision
-I am a theoretical physicist working in computational biology. I co-direct the **[Computational Biology and Drug Design Research Unit (UIBCDF)](https://www.uibcdf.org)** at the Federico Gómez Children's Hospital of Mexico (HIMFG, National Institute of Health), where I mentor research teams, supervise graduate students, and lead scientific software strategy.
+### Executive Summary
+I work at the intersection of theoretical physics, computational molecular science, and software platform architecture. I formulate physical models of biomolecular kinetics and construct the modular software abstractions required to translate mathematical theory into reproducible, high-throughput pipelines.
 
-Our focus is mechanistic computational biology: starting from physical, mathematical, and computational models to understand and predict biomolecular thermodynamics, kinetics, and conformational dynamics:
-- **Free Energy Landscapes & Kinetics:** Formulating and applying Conformational Markov Networks to decompose high-dimensional dynamics into metastable states, transition pathways, and kinetic rates.
-- **Biophysical Modeling & Drug Discovery:** Multiscale simulations of allosteric regulation, GPCRs, membrane biophysics, and cell-penetrating peptides (CPPs) coupled with quantitative thermodynamic validation.
-- **Scientific Track Record:** Author of 30+ peer-reviewed papers (*PLoS Comput. Biol.*, *J. Chem. Theory Comput.*, *J. Chem. Inf. Model.*, etc.) on conformational kinetics, free energy landscapes, and molecular mechanics.
+I co-direct the **Computational Biology and Drug Design Research Unit ([UIBCDF](https://www.uibcdf.org))** and lead the architecture of **[MolSysSuite](https://github.com/uibcdf/molsyssuite)**, an open-source scientific computing platform for molecular modeling, simulation, and AI-assisted workflows.
+
+**Core Technical Foundation:**
+* **Languages & Production Stack:** Libraries and platform built across **Python** (scientific stack, data science, biophysical modeling), **Rust** (memory-safe accelerated compute kernels), and **TypeScript** (modern web visualizers and frontends). Formative background in native **Fortran** for classical numerical physics.
+* **Engineering & Delivery:** Automated CI/CD pipelines, agentic testing tooling, Linux environments, Conda packaging, and multi-platform distribution.
 
 ---
 
-### 🛠️ Open-Source Ecosystem ([@uibcdf](https://github.com/uibcdf) • Permissive / MIT)
-As lead software architect at UIBCDF, I direct and design open-source, modular, and test-driven scientific software built on a layered architecture:
+### 🏛️ The MolSysSuite Platform ([@uibcdf](https://github.com/uibcdf) • Permissive / MIT)
+Rather than a loose collection of research scripts, MolSysSuite is engineered as an **agent-first, layered scientific computing architecture** that eliminates glue-code friction and dependency bloat across molecular science:
 
-#### 1. AI Agents & Intelligent Orchestration
-* **[molsys-ai](https://github.com/uibcdf/molsys-ai):** Autonomous AI agent and scientific reasoning engine designed to orchestrate MolSysSuite workflows, translating high-level biophysical queries into structured, reproducible modeling pipelines.
+* **[ AI & Orchestration ]** → `molsys-ai`
+* **[ Domain & Modeling ]** → `MolSysMT` · `TopoMT` · `MolSysViewer` · `ElasNetMT`
+* **[ Core Contracts & Telemetry ]** → `PyUnitWizard` · `ArgDigest` · `DepDigest` · `SMonitor`
+* **[ Native Compute & Automation ]** → Rust Accelerated Kernels · TypeScript · `pytest-receptor` · Conda Packaging
 
-#### 2. Molecular Modeling & Structural Analysis
-* **[MolSysMT](https://github.com/uibcdf/MolSysMT):** High-level framework providing syntactic consistency and transparent interoperability across major structural biology and simulation engines, powered by performance-critical backends in **Rust**.
-* **[TopoMT](https://github.com/uibcdf/topomt):** Topographic and geometric analysis of molecular surfaces, cavities, pockets, and transport tunnels.
-* **[MolSysViewer](https://github.com/uibcdf/molsysviewer):** High-performance 3D molecular visualization for Jupyter environments built on Mol* with a clean Python API.
+#### Flagship Components
+* **[MolSysMT](https://github.com/uibcdf/molsysmt):** Unified molecular systems toolkit providing syntactic consistency and transparent conversion across 10+ heterogeneous engines and formats (OpenMM, MDTraj, MDAnalysis, PDB, etc.), powered by accelerated compute backends in **Rust**.
+* **[molsys-ai](https://github.com/uibcdf/molsys-ai):** Agentic interface translating high-level biophysical queries into structured, inspectable, and reproducible MolSysSuite execution pipelines.
+* **[TopoMT](https://github.com/uibcdf/topomt):** Geometric and topographic characterization of molecular surfaces, binding pockets, cavities, and transport tunnels.
+* **[MolSysViewer](https://github.com/uibcdf/molsysviewer):** High-performance 3D molecular visualization widget for Jupyter environments built on Mol* with a clean, programmatic API in **TypeScript** and **Python**.
 
-#### 3. Scientific Core & API Infrastructure
-* **[PyUnitWizard](https://github.com/uibcdf/PyUnitWizard):** Universal adapter and orchestration layer for physical quantities and unit libraries (Pint, OpenMM Units, Unyt), ensuring dimensional integrity across scientific codebases.
-* **[ArgDigest](https://github.com/uibcdf/argdigest):** Argument auditing, type normalization, and contract validation layer to decouple input validation from scientific logic and enable deterministic agent introspection.
-* **[DepDigest](https://github.com/uibcdf/depdigest):** Lazy-loading dependency manager designed to eliminate startup overhead when interfacing with heavy scientific packages.
+#### Scientific Infrastructure & Core Contracts
+* **[PyUnitWizard](https://github.com/uibcdf/PyUnitWizard):** Universal adapter and orchestration layer for physical quantities and unit libraries (Pint, OpenMM Units, Unyt), ensuring dimensional safety across codebases.
+* **[ArgDigest](https://github.com/uibcdf/argdigest):** Contract-based argument auditing, type normalization, and introspection layer to decouple input validation from scientific logic and enable deterministic agent introspection.
+* **[DepDigest](https://github.com/uibcdf/depdigest):** Lazy-loading dependency manager eliminating startup overhead when interfacing with heavy optional scientific libraries.
 * **[SMonitor](https://github.com/uibcdf/smonitor):** Centralized telemetry, structured diagnostics, and event routing layer across heterogeneous Python libraries.
-
-#### 4. Agent-Ready Testing, CI/CD & Packaging
-* **[pytest-receptor](https://github.com/uibcdf/pytest-receptor):** Specialized test reporter built for automated CI and coding agents—compact, root-cause-grouped verdicts that prevent LLM hallucination.
-* **gh-run-receptor & Custom Actions:** Tailored CI/CD workflows and CLI tooling for deterministic triage, build orchestration, and automated artifact evaluation.
-* **Packaging & Distribution:** Maintainer of the **UIBCDF Conda channel**, automating multi-platform recipes and reproducible deployment environments.
+* **[pytest-receptor](https://github.com/uibcdf/pytest-receptor):** Specialized test reporter for CI/CD and coding agents—compact, root-cause-grouped verdicts that prevent LLM hallucination.
 
 ---
 
-### ⚙️ Engineering Standards & Core Stack
-- **Physical Invariants First:** Abstractions designed strictly around physical conservation laws, dimensional safety, and rigorous statistical sampling.
-- **Robust Low-Level Performance to High-Level APIs:** Bridging native HPC computing with modern language safety and ergonomic high-level frameworks.
-- **Agent & Human CI/CD:** Fast, deterministic pipelines with specialized tooling for both human developers and autonomous coding agents.
-- **Core Technical Foundation:**
-  - *Languages:* Python (scientific stack for data science, complex systems, biophysics, and molecular simulation), **Fortran** (native HPC foundation), **Rust** (high-performance extensions), C/C++ interfaces.
-  - *Infrastructure & Ops:* Conda/Mamba packaging & distribution, Linux environments, Git/GitHub Actions, automated CI/CD tooling.
+### 📊 Selected Impact & Track Record
+* **Peer-Reviewed Science:** Author of 30+ publications in computational biophysics and statistical mechanics with 1,000+ total citations.
+* **Key Publications:**
+  - *Conformational Markov Networks:* [Exploring the free energy landscape: from dynamics to networks and back](https://doi.org/10.1371/journal.pcbi.1000495) (*PLoS Comput. Biol.*, 2009) — Pioneering graph-theoretical framework mapping molecular trajectories into discrete kinetic networks.
+  - *Allosteric & Receptor Dynamics:* [Conformational transitions and activation mechanisms in GPCRs](https://doi.org/10.1016/j.bpj.2014.11.1925) (*Biophys. J.*) — Kinetic decomposition of activation pathways and free energy landscape transitions.
+* **Architecture & Interoperability:** Designed cross-engine bridges in MolSysMT connecting over 10 major structural biology formats without mandatory vendor lock-in.
+* **Ecosystem Governance:** Maintainer of the **UIBCDF Conda channel**, orchestrating automated multi-platform builds, reproducible recipes, and environment deployment for open science.
+* **Open Source Stewardship:** 10+ actively maintained repositories under `@uibcdf` distributed under permissive open-source licenses (MIT / LGPL).
+
+---
+
+### 🔬 Scientific Leadership & Team Direction
+* **Unit Co-Direction:** Co-PI and Senior Researcher at the **[UIBCDF](https://www.uibcdf.org)** (Hospital Infantil de México Federico Gómez, Mexican National Institutes of Health).
+* **People & Project Leadership:** Supervised and mentored graduate researchers, postdocs, and technical staff across molecular simulation, statistical physics, and scientific software engineering.
+* **Research Program:** Focused on mechanistic computational biology:
+  - **Statistical Mechanics & Molecular Kinetics:** Conformational Markov Networks, transition networks, metastable states, and non-equilibrium free energy surfaces.
+  - **Computational Biophysics & Simulation:** Multiscale dynamics of allosteric regulation, GPCR activation pathways, and membrane biophysics.
+  - **Molecular Modeling & Drug Discovery:** Quantitative thermodynamic binding validation, cell-penetrating peptides (CPPs), and structure-guided pharmacological design.
+
+---
+
+### ⚙️ Engineering Principles
+- **Physics-Aware by Design:** Abstractions preserve physical units, structural semantics, conservation laws, and reproducible statistical sampling.
+- **Contract-Driven & Agent-Ready:** Clean separation between validation contracts (`ArgDigest`), runtime performance, and business logic to ensure deterministic behavior for human developers and autonomous coding agents.
+- **Zero-Frictional Packaging:** Automated multi-platform CI/CD testing, structured telemetry, and unified Conda distribution to eliminate setup barriers.
 
 ---
 
