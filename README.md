@@ -3,7 +3,7 @@
 **Theoretical Physicist · Computational Biologist · Scientific Software Architect**  
 *Molecular Simulation • Statistical Mechanics • Scientific Computing • AI for Molecular Science*
 
-> Co-directing computational biophysics research and architecting production-grade scientific software: from non-equilibrium statistical mechanics to high-performance engines in Rust, Python, and TypeScript.
+> Co-directing computational biophysics research and architecting robust scientific software platforms: from non-equilibrium statistical mechanics to high-performance engines in Rust, Python, and TypeScript.
 
 [![UIBCDF](https://img.shields.io/badge/Lab-UIBCDF.org-2b5b84?logo=google-chrome&logoColor=white)](https://www.uibcdf.org)
 [![Google Scholar](https://img.shields.io/badge/Google-Scholar-4285F4?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=RDB1Sc0AAAAJ)
@@ -20,12 +20,12 @@ I co-direct the **Computational Biology and Drug Design Research Unit ([UIBCDF](
 
 **Core Technical Foundation:**
 * **Languages & Production Stack:** Libraries and platform built across **Python** (scientific stack, data science, biophysical modeling), **Rust** (memory-safe accelerated compute kernels), and **TypeScript** (modern web visualizers and frontends). Formative background in native **Fortran** for classical numerical physics.
-* **Engineering & Delivery:** Automated CI/CD pipelines, agentic testing tooling, Linux environments, Conda packaging, and multi-platform distribution.
+* **Engineering & Delivery:** Automated CI/CD pipelines, agent-ready testing tooling, Linux environments, Conda packaging, and multi-platform distribution.
 
 ---
 
 ### 🏛️ The MolSysSuite Platform ([@uibcdf](https://github.com/uibcdf) • Permissive / MIT)
-Rather than a loose collection of research scripts, MolSysSuite is engineered as an **agent-first, layered scientific computing architecture** that eliminates glue-code friction and dependency bloat across molecular science:
+Rather than a loose collection of research scripts, MolSysSuite is engineered as an **agent-ready, layered scientific computing architecture** designed to reduce glue-code complexity and manage interoperability across heterogeneous molecular-science ecosystems:
 
 * **[ AI & Orchestration ]** → `molsys-ai`
 * **[ Domain & Modeling ]** → `MolSysMT` · `TopoMT` · `MolSysViewer` · `ElasNetMT`
@@ -43,7 +43,7 @@ Rather than a loose collection of research scripts, MolSysSuite is engineered as
 * **[ArgDigest](https://github.com/uibcdf/argdigest):** Contract-based argument auditing, type normalization, and introspection layer to decouple input validation from scientific logic and enable deterministic agent introspection.
 * **[DepDigest](https://github.com/uibcdf/depdigest):** Lazy-loading dependency manager eliminating startup overhead when interfacing with heavy optional scientific libraries.
 * **[SMonitor](https://github.com/uibcdf/smonitor):** Centralized telemetry, structured diagnostics, and event routing layer across heterogeneous Python libraries.
-* **[pytest-receptor](https://github.com/uibcdf/pytest-receptor):** Specialized test reporter for CI/CD and coding agents—compact, root-cause-grouped verdicts that prevent LLM hallucination.
+* **[pytest-receptor](https://github.com/uibcdf/pytest-receptor):** Specialized test reporter for CI/CD and coding agents—compact, root-cause-grouped verdicts optimized for reliable interpretation by coding agents.
 
 ---
 
@@ -71,7 +71,7 @@ Rather than a loose collection of research scripts, MolSysSuite is engineered as
 ### ⚙️ Engineering Principles
 - **Physics-Aware by Design:** Abstractions preserve physical units, structural semantics, conservation laws, and reproducible statistical sampling.
 - **Contract-Driven & Agent-Ready:** Clean separation between validation contracts (`ArgDigest`), runtime performance, and business logic to ensure deterministic behavior for human developers and autonomous coding agents.
-- **Zero-Frictional Packaging:** Automated multi-platform CI/CD testing, structured telemetry, and unified Conda distribution to eliminate setup barriers.
+- **Reproducible Packaging & Delivery:** Automated multi-platform CI/CD testing, structured telemetry, and unified Conda distribution to eliminate setup barriers.
 
 ---
 
