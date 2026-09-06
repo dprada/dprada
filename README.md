@@ -3,7 +3,7 @@
 **Theoretical Physicist · Computational Biologist · Scientific Software Architect**  
 *Molecular Simulation • Statistical Mechanics • Scientific Computing • AI for Molecular Science*
 
-> Co-directing computational biophysics research and architecting robust scientific software platforms: from non-equilibrium statistical mechanics to high-performance engines in Rust, Python, and TypeScript.
+> Co-directing computational biophysics research and architecting robust scientific software platforms: from non-equilibrium statistical mechanics to accelerated compute kernels, scientific Python APIs, and TypeScript visualization.
 
 [![UIBCDF](https://img.shields.io/badge/Lab-UIBCDF.org-2b5b84?logo=google-chrome&logoColor=white)](https://www.uibcdf.org)
 [![Google Scholar](https://img.shields.io/badge/Google-Scholar-4285F4?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=RDB1Sc0AAAAJ)
